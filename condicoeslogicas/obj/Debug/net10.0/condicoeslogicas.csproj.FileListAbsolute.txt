@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\bin\Debug\net10.0\condicoeslogicas.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\bin\Debug\net10.0\condicoeslogicas.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\bin\Debug\net10.0\condicoeslogicas.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\bin\Debug\net10.0\condicoeslogicas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\bin\Debug\net10.0\condicoeslogicas.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\refint\condicoeslogicas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\condicoeslogicas.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\condicoeslogicas\obj\Debug\net10.0\ref\condicoeslogicas.dll
