@@ -1,0 +1,14 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\bin\Debug\net10.0\inputEOutputs.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\bin\Debug\net10.0\inputEOutputs.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\bin\Debug\net10.0\inputEOutputs.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\bin\Debug\net10.0\inputEOutputs.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\bin\Debug\net10.0\inputEOutputs.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\refint\inputEOutputs.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\ref\inputEOutputs.dll

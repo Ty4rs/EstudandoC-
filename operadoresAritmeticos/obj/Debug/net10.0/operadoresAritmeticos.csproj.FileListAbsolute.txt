@@ -1,0 +1,14 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\bin\Debug\net10.0\operadoresAritmeticos.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\bin\Debug\net10.0\operadoresAritmeticos.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\bin\Debug\net10.0\operadoresAritmeticos.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\bin\Debug\net10.0\operadoresAritmeticos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\bin\Debug\net10.0\operadoresAritmeticos.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\refint\operadoresAritmeticos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\ref\operadoresAritmeticos.dll
