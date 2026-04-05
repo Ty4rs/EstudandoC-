@@ -12,3 +12,4 @@ C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\ref
 C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.pdb
 C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.genruntimeconfig.cache
 C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\ref\inputEOutputs.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\inputEOutputs\obj\Debug\net10.0\inputEOutputs.sourcelink.json
