@@ -12,3 +12,4 @@ C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net
 C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.pdb
 C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.genruntimeconfig.cache
 C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\ref\operadoresAritmeticos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresAritmeticos\obj\Debug\net10.0\operadoresAritmeticos.sourcelink.json
