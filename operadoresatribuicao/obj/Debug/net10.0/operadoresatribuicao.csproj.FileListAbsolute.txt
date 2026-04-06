@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\bin\Debug\net10.0\operadoresatribuicao.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\bin\Debug\net10.0\operadoresatribuicao.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\bin\Debug\net10.0\operadoresatribuicao.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\bin\Debug\net10.0\operadoresatribuicao.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\bin\Debug\net10.0\operadoresatribuicao.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\refint\operadoresatribuicao.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\operadoresatribuicao.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresatribuicao\obj\Debug\net10.0\ref\operadoresatribuicao.dll

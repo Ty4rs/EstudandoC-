@@ -8,5 +8,6 @@
   <Project Path="condicoeslogicas/condicoeslogicas.csproj" Id="bb1033a9-5d40-4c93-b7bb-f91e8187aeb8" />
   <Project Path="inputEOutputs/inputEOutputs.csproj" Id="be6892c8-7913-4b3b-bfc6-043059eb4ed0" />
   <Project Path="operadoresAritmeticos/operadoresAritmeticos.csproj" Id="28622c57-ae4f-42c0-8468-4143d2e0208a" />
+  <Project Path="operadoresatribuicao/operadoresatribuicao.csproj" Id="1861aefd-a4ba-4e1c-9dac-f0384ed142dd" />
   <Project Path="primeiroProjeto/primeiroProjeto.csproj" />
 </Solution>
