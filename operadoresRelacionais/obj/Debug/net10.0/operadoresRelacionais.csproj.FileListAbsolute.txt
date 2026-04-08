@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\bin\Debug\net10.0\operadoresRelacionais.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\bin\Debug\net10.0\operadoresRelacionais.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\bin\Debug\net10.0\operadoresRelacionais.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\bin\Debug\net10.0\operadoresRelacionais.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\bin\Debug\net10.0\operadoresRelacionais.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\refint\operadoresRelacionais.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\operadoresRelacionais.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\operadoresRelacionais\obj\Debug\net10.0\ref\operadoresRelacionais.dll

@@ -9,5 +9,6 @@
   <Project Path="inputEOutputs/inputEOutputs.csproj" Id="be6892c8-7913-4b3b-bfc6-043059eb4ed0" />
   <Project Path="operadoresAritmeticos/operadoresAritmeticos.csproj" Id="28622c57-ae4f-42c0-8468-4143d2e0208a" />
   <Project Path="operadoresatribuicao/operadoresatribuicao.csproj" Id="1861aefd-a4ba-4e1c-9dac-f0384ed142dd" />
+  <Project Path="operadoresRelacionais/operadoresRelacionais.csproj" Id="bae96977-ea24-413e-8ae5-8e90a99ee0b2" />
   <Project Path="primeiroProjeto/primeiroProjeto.csproj" />
 </Solution>
