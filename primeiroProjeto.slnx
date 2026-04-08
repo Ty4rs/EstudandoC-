@@ -11,4 +11,5 @@
   <Project Path="operadoresatribuicao/operadoresatribuicao.csproj" Id="1861aefd-a4ba-4e1c-9dac-f0384ed142dd" />
   <Project Path="operadoresRelacionais/operadoresRelacionais.csproj" Id="bae96977-ea24-413e-8ae5-8e90a99ee0b2" />
   <Project Path="primeiroProjeto/primeiroProjeto.csproj" />
+  <Project Path="switch/switchCase.csproj" Id="3cd180aa-d815-4536-9ef6-9ccc88bb3036" />
 </Solution>

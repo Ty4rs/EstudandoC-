@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("operadoresAritmeticos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea920a81133cb0a7cfb37b8a72092322fb9cf702")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aac896f04e24cc172d7814ccd68cb4f3748fb9fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("operadoresAritmeticos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("operadoresAritmeticos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

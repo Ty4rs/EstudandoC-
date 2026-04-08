@@ -10,5 +10,6 @@
         //esse double converte a váriavel temporariamente.</br>
 * Para pular uma linha usa o \n dentro de uma string. </br>
 * operadores de atribuição: ++, --, +=, *=, /=. </br>
-
+* Operadores relacionais: ==, !=, >, <, >=, <=;
+* Operadores lógicos: &&(e), ||(Ou) , !(negação)
 
