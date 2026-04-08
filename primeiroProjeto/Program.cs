@@ -35,5 +35,7 @@ public class Program
         nome4 = "joao4";
         Console.WriteLine(nome4);
 
+
+        Console.Write($"{nome4} olá {nome4, 10}");
     }
 }

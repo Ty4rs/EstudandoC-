@@ -12,3 +12,4 @@ C:\Users\joaocl\source\repos\primeiroProjeto\primeiroProjeto\obj\Debug\net10.0\r
 C:\Users\joaocl\source\repos\primeiroProjeto\primeiroProjeto\obj\Debug\net10.0\primeiroProjeto.pdb
 C:\Users\joaocl\source\repos\primeiroProjeto\primeiroProjeto\obj\Debug\net10.0\primeiroProjeto.genruntimeconfig.cache
 C:\Users\joaocl\source\repos\primeiroProjeto\primeiroProjeto\obj\Debug\net10.0\ref\primeiroProjeto.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\primeiroProjeto\obj\Debug\net10.0\primeiroProjeto.sourcelink.json
