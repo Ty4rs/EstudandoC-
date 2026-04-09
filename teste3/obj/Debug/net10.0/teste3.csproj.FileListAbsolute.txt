@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\bin\Debug\net10.0\teste3.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\bin\Debug\net10.0\teste3.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\bin\Debug\net10.0\teste3.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\bin\Debug\net10.0\teste3.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\bin\Debug\net10.0\teste3.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\refint\teste3.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\teste3.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\teste3\obj\Debug\net10.0\ref\teste3.dll

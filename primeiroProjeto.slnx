@@ -1,18 +1,23 @@
 <Solution>
   <Folder Name="/Itens de Solução/">
+    <File Path="geralAp/Program.cs" />
     <File Path="README.md" />
   </Folder>
+  <Folder Name="/NewFolder1/" />
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
   <Project Path="colecoes/colecoes.csproj" Id="a3751ee8-a198-4d1f-89f7-cecbdc531936" />
   <Project Path="condicoeslogicas/condicoeslogicas.csproj" Id="bb1033a9-5d40-4c93-b7bb-f91e8187aeb8" />
+  <Project Path="escola/escola.csproj" Id="3c96e09c-7751-40a3-98ef-53c94e63904a" />
   <Project Path="inputEOutputs/inputEOutputs.csproj" Id="be6892c8-7913-4b3b-bfc6-043059eb4ed0" />
   <Project Path="listas/listas.csproj" Id="52ecab97-a62c-4d7b-849f-b8b9f6e412a8" />
   <Project Path="manipulandoArquivos/manipulandoArquivos.csproj" Id="f90addc0-57eb-4796-8aab-5147e5770772" />
   <Project Path="operadoresAritmeticos/operadoresAritmeticos.csproj" Id="28622c57-ae4f-42c0-8468-4143d2e0208a" />
   <Project Path="operadoresatribuicao/operadoresatribuicao.csproj" Id="1861aefd-a4ba-4e1c-9dac-f0384ed142dd" />
   <Project Path="operadoresRelacionais/operadoresRelacionais.csproj" Id="bae96977-ea24-413e-8ae5-8e90a99ee0b2" />
+  <Project Path="orientadoAObjetos/orientadoAObjetos.csproj" Id="cea4cf81-8375-4d96-9c97-641fe3a24d18" />
   <Project Path="primeiroProjeto/primeiroProjeto.csproj" />
   <Project Path="switch/switchCase.csproj" Id="3cd180aa-d815-4536-9ef6-9ccc88bb3036" />
+  <Project Path="teste3/teste3.csproj" Id="dc9849d5-97e9-4081-b56e-f97c1ff23dfa" />
 </Solution>

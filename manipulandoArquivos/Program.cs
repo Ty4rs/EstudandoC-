@@ -19,11 +19,11 @@ public class Program()
 
         //Adicionando ao final do arquivo:
         File.AppendAllText(path, "qual o nome seu?");
-
+        
         //Lendo o arquivo:
         Console.WriteLine(File.ReadAllText(path));
         //O File.ReadAllText Lê o texto, mas eu também posso usar o File.ReadAllLines(path) para ler cara linha como se fosse um indice de uma linha
-
+        //também posso usar o File.WriteAllLines(path, arrayComLinhas)
 
 
     }

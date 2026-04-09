@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\bin\Debug\net10.0\escola.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\bin\Debug\net10.0\escola.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\bin\Debug\net10.0\escola.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\bin\Debug\net10.0\escola.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\bin\Debug\net10.0\escola.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\refint\escola.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\escola.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\escola\obj\Debug\net10.0\ref\escola.dll
