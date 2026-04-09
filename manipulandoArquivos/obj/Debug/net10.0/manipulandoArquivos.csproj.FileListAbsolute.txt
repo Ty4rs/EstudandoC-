@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\bin\Debug\net10.0\manipulandoArquivos.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\bin\Debug\net10.0\manipulandoArquivos.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\bin\Debug\net10.0\manipulandoArquivos.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\bin\Debug\net10.0\manipulandoArquivos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\bin\Debug\net10.0\manipulandoArquivos.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\refint\manipulandoArquivos.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\manipulandoArquivos.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\manipulandoArquivos\obj\Debug\net10.0\ref\manipulandoArquivos.dll
