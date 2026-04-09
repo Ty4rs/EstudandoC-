@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\bin\Debug\net10.0\colecoes.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\bin\Debug\net10.0\colecoes.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\bin\Debug\net10.0\colecoes.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\bin\Debug\net10.0\colecoes.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\bin\Debug\net10.0\colecoes.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\refint\colecoes.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\colecoes.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\colecoes\obj\Debug\net10.0\ref\colecoes.dll

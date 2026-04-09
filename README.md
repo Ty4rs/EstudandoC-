@@ -24,15 +24,18 @@
     //Faz isso primeiro</br>
     }while(true);</br>
     </br>
+
     //for</br>
     for(int i=0; i<10; i++){</br>
         //laço;</br>
         }</br>
-    //foreach
-        foreach(int i in lista){
-            Console.WriteLine(i);
-        }
+
+    //foreach</br>
+        foreach(int i in lista){</br>
+            Console.WriteLine(i);</br>
+        }</br>
+        //O foreach percorre uma lista. (((Porém))) o i não é o indice, ele é o item da lista na posição percorrida.
 
 * O Console.WriteLine escreve e pula uma linha </br>
   O Console.Write escreve e não pula</br>
-  Console.Write($"{nome4} olá {nome4, 10}"); //o número 10 adiciona 10 de espaço antes da váriavel
+  Console.Write($"{nome4} olá {nome4, 10}"); //o número 10 adiciona 10 de espaço antes da váriavel</br>
