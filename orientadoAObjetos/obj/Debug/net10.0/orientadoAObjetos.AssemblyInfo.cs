@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("listas")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("orientadoAObjetos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04488c13c8be6db66c1409586205c429fc037efa")]
-[assembly: System.Reflection.AssemblyProductAttribute("listas")]
-[assembly: System.Reflection.AssemblyTitleAttribute("listas")]
+[assembly: System.Reflection.AssemblyProductAttribute("orientadoAObjetos")]
+[assembly: System.Reflection.AssemblyTitleAttribute("orientadoAObjetos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
