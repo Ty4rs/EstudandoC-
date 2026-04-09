@@ -1,0 +1,15 @@
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.AssemblyInfoInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.AssemblyInfo.cs
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.csproj.CoreCompileInputs.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.sourcelink.json
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\bin\Debug\net10.0\listas.exe
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\bin\Debug\net10.0\listas.deps.json
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\bin\Debug\net10.0\listas.runtimeconfig.json
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\bin\Debug\net10.0\listas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\bin\Debug\net10.0\listas.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\refint\listas.dll
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.pdb
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\listas.genruntimeconfig.cache
+C:\Users\joaocl\source\repos\primeiroProjeto\listas\obj\Debug\net10.0\ref\listas.dll
