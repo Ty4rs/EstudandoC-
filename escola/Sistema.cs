@@ -12,7 +12,7 @@ internal class Sistema
         List<Usuario> usuarios = Usuario.carregarUsuario();
         foreach (Usuario usuario in usuarios)
         {
-            Console.WriteLine($"Id: {usuario.id} ,Nome: {usuario.login}, senha: {usuario.senha}, tipo: {usuario.tipo}");
+            //Console.WriteLine($"Id: {usuario.id} ,Nome: {usuario.login}, senha: {usuario.senha}, tipo: {usuario.tipo}");
         }
 
         Usuario user;
@@ -39,10 +39,20 @@ internal class Sistema
                         {
                             case 'A':
                                 Aluno aluno = Aluno.carregarAluno(user);
-                                Console.WriteLine(aluno.nome);
+                                if(aluno is null)
+                                {   Console.Clear();
+                                    Console.WriteLine("Mátricula de aluno não encontrada nesso LOGIN.");
+                                    Console.WriteLine("Precione enter para proseguir com a mátricula!");
+                                    Console.ReadLine();
+                                    Aluno.Cadastro(user);
+                                }
                                 break;
                         }
                     }
+                    break;
+
+                case "2":
+                    Usuario.Cadastro(usuarios);
                     break;
                 case "3":
                     Environment.Exit(0);
