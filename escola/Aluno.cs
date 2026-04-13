@@ -5,7 +5,8 @@ using System.Text;
 namespace escola;
 
 public class Aluno
-{
+{   
+    static string arquivo = "alunos.txt";
     public string nome;
     public int Idade, id;
     public double altura;
@@ -23,7 +24,7 @@ public class Aluno
     {
 
         Aluno aluno = null;
-        var linhas = File.ReadAllLines("alunos.txt").ToList();
+        var linhas = File.ReadAllLines(Aluno.arquivo).ToList();
         for (int i = 0; i < linhas.Count; i += 6)
         {
             
@@ -47,12 +48,19 @@ public class Aluno
         double altura = double.Parse(Console.ReadLine());
         Aluno aluno = new Aluno(user.id, nome, idade, altura);
 
-        File.AppendAllText("alunos.txt", Environment.NewLine + "{" + Environment.NewLine);
-        File.AppendAllText("alunos.txt", aluno.id + Environment.NewLine);
-        File.AppendAllText("alunos.txt", aluno.nome + Environment.NewLine);
-        File.AppendAllText("alunos.txt", aluno.Idade + Environment.NewLine);
-        File.AppendAllText("alunos.txt", aluno.altura + Environment.NewLine);
-        File.AppendAllText("alunos.txt", "}");
+        if (string.IsNullOrWhiteSpace(File.ReadLines(Aluno.arquivo).FirstOrDefault()))
+        {
+            File.AppendAllText(Aluno.arquivo, "{" + Environment.NewLine);
+        }
+        else
+        {
+            File.AppendAllText(Aluno.arquivo, Environment.NewLine + "{" + Environment.NewLine);
+        }
+        File.AppendAllText(Aluno.arquivo, aluno.id + Environment.NewLine);
+        File.AppendAllText(Aluno.arquivo, aluno.nome + Environment.NewLine);
+        File.AppendAllText(Aluno.arquivo, aluno.Idade + Environment.NewLine);
+        File.AppendAllText(Aluno.arquivo, aluno.altura + Environment.NewLine);
+        File.AppendAllText(Aluno.arquivo, "}");
 
         Console.WriteLine("Matricula realizada com sucesso!");
 
