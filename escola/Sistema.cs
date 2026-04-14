@@ -103,9 +103,9 @@ internal class Sistema
             {
                 case "1":
                     Console.Clear();
-                    List<MatriculasMaterias> todasMatriculas = MatriculasMaterias.carregarTudo();
+                    List<MatriculasMaterias> todasMatriculas = MatriculasMaterias.carregarTodasMatriculasMaterias();
                     List<Materia> todasAsMaterias = Materia.carregarMaterias();
-                    var materiasDoAluno = todasAsMaterias.Where(mat => todasMatriculas.Any(matricula => matricula.idMateria == mat.id && matricula.idAluno == user.id)).ToList();
+                    var materiasDoAluno = todasAsMaterias.Where(mat => todasMatriculas.Any(matricula => matricula.idMateria == mat.id && matricula.idAluno == aluno.id)).ToList();
 
                     foreach (var m in materiasDoAluno)
                     {
@@ -158,16 +158,16 @@ internal class Sistema
                 case "3":
                     Console.Clear();
                         
-                    //List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria();
-                    //List<Usuario> usuarios = Usuario.carregarUsuario();
-                    //var usuariosMatriculados = usuarios.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
+                    List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria();
+                    List<Usuario> usuarios = Usuario.carregarUsuario();
+                    var usuariosMatriculados = usuarios.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
                     
-                    //foreach (Usuario usuario in usuariosMatriculados)
-                    //{
-                    //    Console.WriteLine($"Aluno: {Aluno.carregarAluno(usuario).nome}");
-                    //}
+                    foreach (Usuario usuario in usuariosMatriculados)
+                    {
+                        Console.WriteLine($"Aluno: {Aluno.carregarAluno(usuario).nome}");
+                    }
                     
-                    //Console.ReadLine();
+                    Console.ReadLine();
                     break;
                 default:
                     Console.Clear();

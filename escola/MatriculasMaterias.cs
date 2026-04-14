@@ -43,6 +43,20 @@ public class MatriculasMaterias
         File.AppendAllText(MatriculasMaterias.arquivo, "}" + Environment.NewLine);
     }
 
+    public static List<MatriculasMaterias> carregarTodasMatriculasMaterias()
+    {   
+        var matriculas = new List<MatriculasMaterias>{};
+        List<string> linhas = File.ReadAllLines(arquivo).ToList();
+        for(int i=0; i < linhas.Count; i+=4)
+        {
+            int.TryParse(linhas[i+1], out int idAluno);
+            int.TryParse(linhas[i+2], out int idMateria);
+            MatriculasMaterias  matriculaMateria = new MatriculasMaterias(idAluno, idMateria);
+            matriculas.Add(matriculaMateria);
+        }
+        return matriculas;
+
+    }
 
     public static List<MatriculasMaterias> carregarAlunosPorMateria()
     {
