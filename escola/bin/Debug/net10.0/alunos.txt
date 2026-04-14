@@ -1,12 +1,6 @@
 {
 1
-joao
-20
+jota
 10
-}
-{
-7
-joao vitor
 20
-10
 }

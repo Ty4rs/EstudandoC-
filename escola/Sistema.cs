@@ -48,6 +48,10 @@ internal class Sistema
                                     Console.ReadLine();
                                     Aluno.Cadastro(user);
                                 }
+
+                                Console.Clear();
+                                Console.WriteLine("Login realizado com sucesso!");
+                                InterfaceAluno(aluno);
                                 break;
                             case 'P':
                                 Professor professor = Professor.carregarProfessor(user);
@@ -63,13 +67,6 @@ internal class Sistema
                                 Console.Clear();
                                 Console.WriteLine("Login realizado com sucesso!");
                                 var materias = Materia.carregarMateriasPorProfessor(professor);
-                                if (materias.Count > 0)
-                                {
-                                    foreach (Materia mat in materias)
-                                    {
-                                        Console.WriteLine($"Matéria: {mat.nome}, Carga Horária: {mat.cargaHoraria}");
-                                    }
-                                }
                                 InterfaceProfessor(professor);
                                 break;
                         }
@@ -95,7 +92,7 @@ internal class Sistema
             Console.Clear();
             Console.WriteLine("\n" + barras + " Portal do Professor " + barras);
             Console.WriteLine("Escolha uma atividade para realizar: ");
-            Console.WriteLine("1 - Lstar minhas matérias.");
+            Console.WriteLine("1 - Listar minhas matérias.");
             Console.WriteLine("2 - Cadastrar na matéria.");
             Console.WriteLine("3 - Voltar");
             string escolha = Console.ReadLine();
@@ -105,6 +102,10 @@ internal class Sistema
                     Console.Clear();
                     List<MatriculasMaterias> todasMatriculas = MatriculasMaterias.carregarTodasMatriculasMaterias();
                     List<Materia> todasAsMaterias = Materia.carregarMaterias();
+                    if(todasMatriculas is null || todasAsMaterias is null)
+                    {
+                        break;
+                    }
                     var materiasDoAluno = todasAsMaterias.Where(mat => todasMatriculas.Any(matricula => matricula.idMateria == mat.id && matricula.idAluno == aluno.id)).ToList();
 
                     foreach (var m in materiasDoAluno)
@@ -143,6 +144,13 @@ internal class Sistema
                 case "1":
                     Console.Clear();
                     List<Materia> materias = Materia.carregarMateriasPorProfessor(professor);
+                    if(materias is null)
+                    {
+                        Console.WriteLine("\nVocê ainda não possuí nenhuma matéria...");
+                        Console.WriteLine("Pressione enter para continuar");
+                        Console.ReadLine();
+                        break;
+                    }
                     foreach (Materia mat in materias)
                     {
                         Console.WriteLine($"Matéria: {mat.nome}, Carga Horária: {mat.cargaHoraria}");
@@ -160,6 +168,13 @@ internal class Sistema
                         
                     List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria();
                     List<Usuario> usuarios = Usuario.carregarUsuario();
+                    if(matriculasporMaterias is null)
+                    {
+                        Console.WriteLine("\nNão foi encontrada nenhuma matrícula ou aluno...");
+                        Console.WriteLine("Pressione enter para continuar...");
+                        Console.ReadLine();
+                        break;
+                    }
                     var usuariosMatriculados = usuarios.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
                     
                     foreach (Usuario usuario in usuariosMatriculados)

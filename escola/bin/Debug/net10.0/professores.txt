@@ -1,24 +1,6 @@
 {
-5
-luis pedro
-xxxxx-xxxxx
-analise e des de sistema
-}
-{
-3
-juju
-xxxx-xxx
-
-}
-{
-4
-joao vitor
-xxxx-xxxx
-p
-}
-{
-6
-joao vitor de freitas
-xxxx-xxx
-ads
+2
+pro
+pro
+xxx-xxx
 }

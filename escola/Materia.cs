@@ -77,7 +77,8 @@ public class Materia
         string nome = Console.ReadLine();
         Console.WriteLine("Digite a carga horária:");
         int cargaHoraria = int.Parse(Console.ReadLine());
-        Materia materia = new Materia(professor.id, professor.id, nome, cargaHoraria);
+        int IdMatéria = Materia.carregarMaterias().Count + 1;
+        Materia materia = new Materia(IdMatéria, professor.id, nome, cargaHoraria);
         if (string.IsNullOrWhiteSpace(File.ReadLines(Materia.arquivo).FirstOrDefault()))
         {
             File.AppendAllText(Materia.arquivo, "{" + Environment.NewLine);

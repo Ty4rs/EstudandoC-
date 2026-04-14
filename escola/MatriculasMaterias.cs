@@ -23,6 +23,13 @@ public class MatriculasMaterias
 
         List<Materia> materias = Materia.carregarMaterias();
         Console.WriteLine("Materias Disponiveis:");
+        if(materias is null)
+        {
+            Console.WriteLine("\nNenhuma matéria disponível para matrícula...");
+            Console.WriteLine("\nPrecione enter para continuar...");
+            Console.ReadLine();
+            return;
+        }
         foreach (Materia materia in materias)
         {
             Console.WriteLine($"ID: {materia.id} - {materia.nome}");
@@ -40,7 +47,7 @@ public class MatriculasMaterias
         }
         File.AppendAllText(MatriculasMaterias.arquivo, matricula.idAluno + Environment.NewLine);
         File.AppendAllText(MatriculasMaterias.arquivo, matricula.idMateria + Environment.NewLine);
-        File.AppendAllText(MatriculasMaterias.arquivo, "}" + Environment.NewLine);
+        File.AppendAllText(MatriculasMaterias.arquivo, "}");
     }
 
     public static List<MatriculasMaterias> carregarTodasMatriculasMaterias()
@@ -62,6 +69,12 @@ public class MatriculasMaterias
     {
         List<Materia> materiasTotais = Materia.carregarMaterias();
         Console.WriteLine("Materias Disponiveis:");
+        if(materiasTotais is null)
+        {
+            Console.WriteLine("\nNão existe nenhuma matéria cadastrada ainda...");
+            Console.WriteLine("Precione enter para continuar...");
+            return null;
+        }
         foreach (Materia materia in materiasTotais)
         {
             Console.WriteLine($"ID: {materia.id} - {materia.nome}");
