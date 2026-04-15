@@ -80,7 +80,8 @@ public class MatriculasMaterias
             Console.WriteLine($"ID: {materia.id} - {materia.nome}");
         }
         Console.WriteLine("\nDigite o ID da materia que deseja buscar:");
-        int idMateria = int.Parse(Console.ReadLine());
+        
+        int.TryParse(Console.ReadLine(), out int idMateria);
         
         List<MatriculasMaterias> materias = new List<MatriculasMaterias> { };
         var linhas = File.ReadAllLines(MatriculasMaterias.arquivo).ToList();
@@ -94,7 +95,7 @@ public class MatriculasMaterias
                     
                     MatriculasMaterias materia = new MatriculasMaterias(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]));
                     materias.Add(materia);
-                    continue;
+                    
 
 
                 }

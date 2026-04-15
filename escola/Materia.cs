@@ -45,11 +45,10 @@ public class Materia
             for (int i = 0; i<linhas.Count; i += 6)
             {
 
-                if ((linhas[i + 1]) == professor.id.ToString())
+                if ((linhas[i + 2]) == professor.id.ToString())
                 {
                     Materia materia = new Materia(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]), linhas[i + 3], int.Parse(linhas[i + 4]));
                     materias.Add(materia);
-                    continue;
                 }
             }
         }
