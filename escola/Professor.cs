@@ -6,7 +6,7 @@ namespace escola;
 
 public class Professor
 {   
-    static string arquivo = "professores.txt";
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "professores.txt");
     public int id;
     public string nome, cpf, formacao;
     public Professor(int id, string nome, string cpf, string formacao)
@@ -22,7 +22,7 @@ public class Professor
     {
 
         Professor professor = null;
-        var linhas = File.ReadAllLines("professores.txt").ToList();
+        var linhas = File.ReadAllLines(Professor.arquivo).ToList();
         if (linhas.Count > 0)
         {
             for (int i = 0; i < linhas.Count; i += 6)

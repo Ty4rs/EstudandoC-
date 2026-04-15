@@ -119,7 +119,6 @@ internal class Sistema
                     Console.Clear();
                     MatriculasMaterias.Cadastro(aluno);
                     break;
-               
                 default:
                     Console.Clear();
                     return;
@@ -127,7 +126,7 @@ internal class Sistema
 
         }
     }
-        public static void InterfaceProfessor(Professor professor)
+    public static void InterfaceProfessor(Professor professor)
     {
         while (true)
         {

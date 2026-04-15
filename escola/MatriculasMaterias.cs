@@ -6,7 +6,7 @@ namespace escola;
 
 public class MatriculasMaterias
 {
-    static string arquivo = "matriculas-materias.txt";
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "matriculas-materias.txt");
     public int idAluno, idMateria;
     
     public MatriculasMaterias(int idAluno, int idMateria)

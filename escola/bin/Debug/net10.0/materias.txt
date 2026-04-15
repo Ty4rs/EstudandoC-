@@ -4,3 +4,15 @@
 historia
 10
 }
+{
+2
+3
+matematica 2
+10
+}
+{
+3
+3
+matematoca
+10
+}

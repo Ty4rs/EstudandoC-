@@ -8,7 +8,7 @@ namespace escola;
 
 public class Usuario
 {   
-    static string arquivo = "usuarios.txt";
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "usuarios.txt");
     public string login, senha;
     public int id;
     public char tipo; // A - Aluno, P - Professor.
@@ -32,16 +32,13 @@ public class Usuario
         string senha = Console.ReadLine();
 
         foreach (Usuario user in usuario)
-        {   
-            
+        {
             if (user.login == login && user.senha == senha)
             {
                 Console.WriteLine($"Bem-vindo, {user.login}!");
                 return user;
             }
-            
         }
-        
         Console.WriteLine("Login ou senha incorretos. Tente novamente.");
         return null;
     }
@@ -56,13 +53,11 @@ public class Usuario
             var linhas = File.ReadAllLines(Usuario.arquivo).ToList();
             for (int i = 0; i < linhas.Count; i += 6)
             {
-                
                 Usuario user = new Usuario(int.Parse(linhas[i + 1]), linhas[i + 2], linhas[i + 3], Convert.ToChar(linhas[i + 4]));
                 usuarios.Add(user);
             }
-            
         }
-        else 
+        else
         {
             Console.WriteLine("Nenhum usuário encontrado.");
         }
@@ -73,7 +68,6 @@ public class Usuario
     {
         string login, senha;
         char funcao;
-        
         Console.Clear();
         Console.WriteLine($"{Sistema.barras} CADASTRO {Sistema.barras}");
         Console.WriteLine("\nDigite um login para cadastro:");

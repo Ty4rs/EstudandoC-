@@ -6,7 +6,7 @@ namespace escola;
 
 public class Aluno
 {   
-    static string arquivo = "alunos.txt";
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "alunos.txt");
     public string nome;
     public int Idade, id;
     public double altura;
@@ -18,6 +18,7 @@ public class Aluno
         this.nome = nome;
         this.Idade = idade;
         this.altura = altura;
+
         
     }
     public static Aluno carregarAluno(Usuario usuario)

@@ -6,17 +6,15 @@ using System.Text;
 namespace escola;
 public class Materia
 {   
-    static string arquivo = "materias.txt";
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "materias.txt");
     public string nome;
     public int id, cargaHoraria, IDProfessor;
-    
     public Materia(int id, int IDProfessor, string nome, int cargaHoraria)
     {
         this.IDProfessor = IDProfessor;
         this.id = id;
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
-        
     }
 
     public static List<Materia> carregarMaterias()
@@ -36,10 +34,6 @@ public class Materia
 
             }
         }
-        else
-        {
-            return null;
-        }
         return materias;
     }
     public static List<Materia> carregarMateriasPorProfessor(Professor professor)
@@ -55,16 +49,9 @@ public class Materia
                 {
                     Materia materia = new Materia(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]), linhas[i + 3], int.Parse(linhas[i + 4]));
                     materias.Add(materia);
-                    Console.WriteLine("aa" +materia.ToString());
                     continue;
-                    
-
                 }
             }
-        }
-        else
-        {
-            return null;
         }
         return materias;
     }
@@ -93,10 +80,4 @@ public class Materia
         File.AppendAllText(Materia.arquivo, materia.cargaHoraria.ToString() + Environment.NewLine);
         File.AppendAllText(Materia.arquivo, "}");
     }
-
-    
-
-
-
-
 }

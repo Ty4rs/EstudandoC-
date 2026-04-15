@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaocl\\source\\repos\\primeiroProjeto\\inputEOutputs\\inputEOutputs.csproj": {}
+    "/root/net/EstudandoC-/inputEOutputs/inputEOutputs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaocl\\source\\repos\\primeiroProjeto\\inputEOutputs\\inputEOutputs.csproj": {
+    "/root/net/EstudandoC-/inputEOutputs/inputEOutputs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaocl\\source\\repos\\primeiroProjeto\\inputEOutputs\\inputEOutputs.csproj",
+        "projectUniqueName": "/root/net/EstudandoC-/inputEOutputs/inputEOutputs.csproj",
         "projectName": "inputEOutputs",
-        "projectPath": "C:\\Users\\joaocl\\source\\repos\\primeiroProjeto\\inputEOutputs\\inputEOutputs.csproj",
-        "packagesPath": "C:\\Users\\joaocl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaocl\\source\\repos\\primeiroProjeto\\inputEOutputs\\obj\\",
+        "projectPath": "/root/net/EstudandoC-/inputEOutputs/inputEOutputs.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/net/EstudandoC-/inputEOutputs/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\joaocl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
