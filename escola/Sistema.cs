@@ -130,6 +130,7 @@ internal class Sistema
     {
         while (true)
         {
+            
             Console.Clear();
             Console.WriteLine("\n" + barras + " Portal do Professor " + barras);
             Console.WriteLine("Escolha uma atividade para realizar: ");
@@ -165,22 +166,49 @@ internal class Sistema
                 case "3":
                     Console.Clear();
                         
-                    List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria();
-                    List<Usuario> usuarios = Usuario.carregarUsuario();
-                    if(matriculasporMaterias is null)
+                    //List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria();
+                    //List<Usuario> usuarios = Usuario.carregarUsuario();
+                    //if(matriculasporMaterias is null)
+                    //{
+                    //    Console.WriteLine("\nNão foi encontrada nenhuma matrícula ou aluno...");
+                    //    Console.WriteLine("Pressione enter para continuar...");
+                    //    Console.ReadLine();
+                    //    break;
+                    //}
+                    //var usuariosMatriculados = usuarios.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
+                    
+                    //foreach (Usuario usuario in usuariosMatriculados)
+                    //{
+                    //    Console.WriteLine($"Aluno: {Aluno.carregarAluno(usuario).nome}");
+                    //}
+
+                    List<Materia> materiasDoProfessor = Materia.carregarMateriasPorProfessor(professor);
+                    List<MatriculasMaterias> matriculas = MatriculasMaterias.carregarAlunosPorMateria(professor);
+
+                    if (matriculas == null || materiasDoProfessor == null || materiasDoProfessor.Count == 0)
                     {
-                        Console.WriteLine("\nNão foi encontrada nenhuma matrícula ou aluno...");
+                        Console.WriteLine("\nNão foi encontrada nenhuma matrícula ou matéria para este professor...");
                         Console.WriteLine("Pressione enter para continuar...");
                         Console.ReadLine();
                         break;
                     }
-                    var usuariosMatriculados = usuarios.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
-                    
+
+                    var matriculasDoProfessor = matriculas.Where(m => materiasDoProfessor.Any(mat => mat.id == m.idMateria)).ToList();
+                    var usuariosMatriculados = Usuario.carregarUsuario().Where(u => matriculasDoProfessor.Any(m => m.idAluno == u.id)).ToList();
+
+                    if (usuariosMatriculados.Count == 0)
+                    {
+                        Console.WriteLine("\nNão foi encontrada nenhuma matrícula ou aluno para este professor...");
+                        Console.WriteLine("Pressione enter para continuar...");
+                        Console.ReadLine();
+                        break;
+                    }
+
                     foreach (Usuario usuario in usuariosMatriculados)
                     {
                         Console.WriteLine($"Aluno: {Aluno.carregarAluno(usuario).nome}");
                     }
-                    
+
                     Console.ReadLine();
                     break;
                 default:

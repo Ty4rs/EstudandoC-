@@ -65,32 +65,35 @@ public class MatriculasMaterias
 
     }
 
-    public static List<MatriculasMaterias> carregarAlunosPorMateria()
+    public static List<MatriculasMaterias> carregarAlunosPorMateria(Professor professor)
     {
-        List<Materia> materiasTotais = Materia.carregarMaterias();
+
+        List<Materia> materiasDoProfessor = Materia.carregarMateriasPorProfessor(professor);
+        List<MatriculasMaterias> materias = new List<MatriculasMaterias> { };
+
+
         Console.WriteLine("Materias Disponiveis:");
-        if(materiasTotais is null)
+        if(materiasDoProfessor is null || materiasDoProfessor.Count==0)
         {
             Console.WriteLine("\nNão existe nenhuma matéria cadastrada ainda...");
             Console.WriteLine("Precione enter para continuar...");
-            return null;
+            return materias;
         }
-        foreach (Materia materia in materiasTotais)
+        foreach (Materia materia in materiasDoProfessor)
         {
             Console.WriteLine($"ID: {materia.id} - {materia.nome}");
         }
-        Console.WriteLine("\nDigite o ID da materia que deseja buscar:");
+        Console.WriteLine("\nDigite o ID da materia que deseja:");
         
         int.TryParse(Console.ReadLine(), out int idMateria);
         
-        List<MatriculasMaterias> materias = new List<MatriculasMaterias> { };
         var linhas = File.ReadAllLines(MatriculasMaterias.arquivo).ToList();
         if (linhas.Count > 0)
         {
             for (int i = 0; i < linhas.Count; i += 4)
             {
-                Materia materiaLinha = materiasTotais.FirstOrDefault(mat => mat.id == Convert.ToInt32(linhas[i + 2]));
-                if (materiaLinha.id == idMateria)
+                
+                if (Convert.ToInt32(linhas[i + 2]) == idMateria)
                 {
                     
                     MatriculasMaterias materia = new MatriculasMaterias(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]));

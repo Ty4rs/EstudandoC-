@@ -36,6 +36,17 @@ public class Aluno
         }
         return aluno;
     }
+    public static List<Aluno> carregarTodosAlunos()
+    {
+        List<Aluno> alunos = new List<Aluno>();
+        var linhas = File.ReadAllLines(Aluno.arquivo).ToList();
+        for (int i = 0; i < linhas.Count; i += 6)
+        {
+            Aluno aluno = new Aluno(int.Parse(linhas[i + 1]), linhas[i + 2], int.Parse(linhas[i + 3]), double.Parse(linhas[i + 4]));
+            alunos.Add(aluno);
+        }
+        return alunos;
+    }
 
     public static void Cadastro(Usuario user)
     {
