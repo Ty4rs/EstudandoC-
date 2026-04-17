@@ -30,7 +30,6 @@ public class Frequencia
             {
                 Frequencia frequencia = new Frequencia(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]), int.Parse(linhas[i + 3]), linhas[i + 4], bool.Parse(linhas[i + 5]));
                 frequencias.Add(frequencia);
-                Console.WriteLine("aa" + frequencia.ToString());
             }
         }
         return frequencias;
@@ -60,21 +59,6 @@ public class Frequencia
     {
         Console.Clear();
         Console.WriteLine($"{Sistema.barras} Lançar Frequencia {Sistema.barras}\n");
-        //List<Materia> materias = Materia.carregarMateriasPorProfessor(professor);
-        //Console.WriteLine("Materias Disponiveis:");
-        //if (materias is null)
-        //{
-        //    Console.WriteLine("\nNenhuma matéria disponível para lançar frequência...");
-        //    Console.WriteLine("\nPrecione enter para continuar...");
-        //    Console.ReadLine();
-        //    return;
-        //}
-        //foreach (Materia materia in materias)
-        //{
-        //    Console.WriteLine($"ID: {materia.id} - {materia.nome}");
-        //}
-        //Console.WriteLine("\nDigite o ID da materia que deseja lançar frequência:");
-        //int idMateria = int.Parse(Console.ReadLine());
 
         List<MatriculasMaterias> matriculasporMaterias = MatriculasMaterias.carregarAlunosPorMateria(professor);
         List<Aluno> alunos = Aluno.carregarTodosAlunos();

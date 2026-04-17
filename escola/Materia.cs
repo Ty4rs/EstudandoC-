@@ -29,7 +29,7 @@ public class Materia
                 
                 Materia materia = new Materia(int.Parse(linhas[i + 1]), int.Parse(linhas[i + 2]), linhas[i + 3], int.Parse(linhas[i + 4]));
                 materias.Add(materia);
-                Console.WriteLine("aa" + materia.ToString());
+                
                     
 
             }
@@ -62,7 +62,12 @@ public class Materia
         Console.WriteLine("Digite o nome da materia:");
         string nome = Console.ReadLine();
         Console.WriteLine("Digite a carga horária:");
-        int cargaHoraria = int.Parse(Console.ReadLine());
+        if(int.TryParse(Console.ReadLine(), out int cargaHoraria))
+        {
+            Console.WriteLine("Carga Horária inválida.");
+            Console.ReadLine();
+            return;
+        }
         int IdMatéria = Materia.carregarMaterias().Count + 1;
         Materia materia = new Materia(IdMatéria, professor.id, nome, cargaHoraria);
         if (string.IsNullOrWhiteSpace(File.ReadLines(Materia.arquivo).FirstOrDefault()))

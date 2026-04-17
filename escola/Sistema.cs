@@ -24,6 +24,7 @@ internal class Sistema
         Console.Clear();
         while (true)
         {
+            Console.Clear();
             Console.WriteLine($"{barras} Cadastro / login {barras}\n");
             Console.WriteLine("Escolha um para continuar:");
             Console.WriteLine("1 - Login");
@@ -95,7 +96,8 @@ internal class Sistema
             Console.WriteLine("Escolha uma atividade para realizar: ");
             Console.WriteLine("1 - Listar minhas matérias.");
             Console.WriteLine("2 - Cadastrar na matéria.");
-            Console.WriteLine("3 - Voltar");
+            Console.WriteLine("3 - Consultar Frequências.");
+            Console.WriteLine("4 - Voltar.");
             string escolha = Console.ReadLine();
             switch (escolha)
             {
@@ -108,10 +110,12 @@ internal class Sistema
                         break;
                     }
                     var materiasDoAluno = todasAsMaterias.Where(mat => todasMatriculas.Any(matricula => matricula.idMateria == mat.id && matricula.idAluno == aluno.id)).ToList();
-
+                        
+                    Console.WriteLine($"{barras} Minhas Matérias {barras}\n");
+                    Console.WriteLine("Minhas matérias são:");
                     foreach (var m in materiasDoAluno)
                     {
-                        Console.WriteLine($"Você está matriculado em: {m.nome}");
+                        Console.WriteLine($"-{m.nome}.");
                     }
                     Console.WriteLine("\n \nPrecione enter para continuar...");
                     Console.ReadLine();
@@ -119,6 +123,26 @@ internal class Sistema
                 case "2":
                     Console.Clear();
                     MatriculasMaterias.Cadastro(aluno);
+                    break;
+
+                case "3":
+                    Console.Clear();
+                    Console.WriteLine($"{barras} Minhas Frequências {barras}\n");
+
+                    var todasFrequencias = Frequencia.carregarFrequencias().Where(all => all.IdAluno == aluno.id).ToList();
+                    todasAsMaterias = Materia.carregarMaterias();
+                    var matriculasMaterias = todasAsMaterias.Join(todasFrequencias, mat => mat.id, freq => freq.IdMateria, (mat, materia) => new { mat, materia });
+                    var presente = matriculasMaterias.Where(mm => mm.materia.Presente).ToList();
+                    
+                    
+                    //Tenho que usar um group by
+                    foreach (var mf in matriculasMaterias)
+                    {
+                        Console.WriteLine($"Matéria: {mf.mat.nome} - Presenças: {presente.Count}, faltas: {matriculasMaterias.Count() - presente.Count()}");
+                    }
+
+                    Console.ReadLine();
+
                     break;
                 default:
                     Console.Clear();
@@ -133,9 +157,9 @@ internal class Sistema
         {
             
             Console.Clear();
-            Console.WriteLine("\n" + barras + " Portal do Professor " + barras);
-            Console.WriteLine("Escolha uma atividade para realizar: ");
-            Console.WriteLine("1 - Lstar minhas matérias.");
+            Console.WriteLine($"{barras} Portal do Professor {barras}");
+            Console.WriteLine("\nEscolha uma atividade para realizar: ");
+            Console.WriteLine("1 - Listar minhas matérias.");
             Console.WriteLine("2 - Cadastrar matéria.");
             Console.WriteLine("3 - Consultar alunos de minhas matérias.");
             Console.WriteLine("4 - Cadastrar Frequência.");
@@ -146,6 +170,7 @@ internal class Sistema
             {
                 case "1":
                     Console.Clear();
+                    Console.WriteLine($"{barras} Minhas Matérias {barras}\n");
                     List<Materia> materias = Materia.carregarMateriasPorProfessor(professor);
                     if(materias is null)
                     {
@@ -223,7 +248,7 @@ internal class Sistema
 
                 case "5":
                     Console.Clear();
-                    Console.WriteLine($"{barras} Frequencias {barras}");
+                    Console.WriteLine($"{barras} Frequencias {barras}\n");
                     List<Frequencia> frequencias = Frequencia.carregarFrequencias();
                     if (frequencias is null || frequencias.Count == 0)
                     {
@@ -250,7 +275,7 @@ internal class Sistema
                         Console.ReadLine();
                         return;
                     }
-                    foreach (Materia materia in materias)
+                    foreach (Materia materia in materiasProfessor)
                     {
                         Console.WriteLine($"ID: {materia.id} - {materia.nome}");
                     }
@@ -260,13 +285,25 @@ internal class Sistema
                     {
                         var alunoMatfrequencia = materiasFrequencia.Where(mf => mf.f.IdMateria == idMateria).
                             Join(Aluno.carregarTodosAlunos(), mfw => mfw.f.IdAluno, a => a.id, (mfw, a) => new {mfw, a});
-
+                        var groupAlMatfreqPorDt = alunoMatfrequencia.GroupBy(amf => amf.mfw.f.Data);
                         Console.Clear();
                         Console.WriteLine($"{barras}{materiasFrequencia.FirstOrDefault().mp.nome} {barras}");
-                        foreach (var mat in alunoMatfrequencia.Where(mf => mf.mfw.f.IdMateria == idMateria))
+
+
+                        foreach(var group in groupAlMatfreqPorDt)
                         {
-                           Console.WriteLine($"Aluno: {mat.a.nome} Data: {mat.mfw.f.Data} Presente: {(mat.mfw.f.Presente ? "Sim" : "Não")}");
+                            Console.WriteLine($"\nData: {group.Key}");
+                            foreach(var amfGroup in group)
+                            {
+                                Console.WriteLine($"Aluno: {amfGroup.a.nome} Presente: {(amfGroup.mfw.f.Presente ? "Sim" : "Não")}");
+                            }
+
                         }
+
+                        //foreach (var mat in alunoMatfrequencia.Where(mf => mf.mfw.f.IdMateria == idMateria))
+                        //{
+                        //   Console.WriteLine($"Aluno: {mat.a.nome} Data: {mat.mfw.f.Data} Presente: {(mat.mfw.f.Presente ? "Sim" : "Não")}");
+                        //}
                         Console.WriteLine("Pressione ENTER para continuar...");
                         Console.ReadLine();
                         break;

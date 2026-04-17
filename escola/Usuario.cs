@@ -40,6 +40,7 @@ public class Usuario
             }
         }
         Console.WriteLine("Login ou senha incorretos. Tente novamente.");
+        Console.ReadLine();
         return null;
     }
 
