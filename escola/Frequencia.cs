@@ -6,21 +6,21 @@ namespace escola;
 
 public class Frequencia
 {
-    static string arquivo = Path.Combine(AppContext.BaseDirectory, "materias.txt");
-    int Id, IdMateria, IdAluno;
-    string Data;
+    static string arquivo = Path.Combine(AppContext.BaseDirectory, "frequencia.txt");
+    public int Id, IdMateria, IdAluno;
+    public string Data;
     public bool Presente;
 
     public Frequencia(int Id, int IdMateria, int IdAluno, string Data, bool Presente)
     {
         this.Id = Id;
         this.IdMateria = IdMateria;
-        this.IdAluno = 0;
+        this.IdAluno = IdAluno;
         this.Data = Data;
         this.Presente = Presente;
     }
 
-    public List<Frequencia> carregarFrequencias()
+    public static List<Frequencia> carregarFrequencias()
     {
         List<Frequencia> frequencias = new List<Frequencia> { };
         var linhas = File.ReadAllLines(Frequencia.arquivo).ToList();
@@ -54,6 +54,8 @@ public class Frequencia
         return frequencias;
     }
 
+    
+
     public static void Cadastro(Professor professor)
     {
         Console.Clear();
@@ -84,11 +86,35 @@ public class Frequencia
 
         }
         else
-        {
+        {   
+            Console.WriteLine("\nDigite a data da frequência (dd/mm/yyyy):");
+            string data = Console.ReadLine();
             var alunosmatriculados = alunos.Where(u => matriculasporMaterias.Any(m => m.idAluno == u.id)).ToList();
             foreach (Aluno aluno in alunosmatriculados)
             {
                 Console.WriteLine($"ID: {aluno.id} - {aluno.nome}");
+                Console.WriteLine("O aluno está presente? (s/n)");
+                bool resposta = Console.ReadLine()== "s" ? true : false;
+
+                Frequencia frequencia = new Frequencia(carregarFrequencias().Count + 1, matriculasporMaterias[0].idMateria, aluno.id, data, resposta);
+                
+
+
+                if (string.IsNullOrWhiteSpace(File.ReadLines(Frequencia.arquivo).FirstOrDefault()))
+                {
+                    File.AppendAllText(Frequencia.arquivo, "{" + Environment.NewLine);
+                }
+                else
+                {
+                    File.AppendAllText(Frequencia.arquivo, Environment.NewLine + "{" + Environment.NewLine);
+                }
+                File.AppendAllText(Frequencia.arquivo, frequencia.Id + Environment.NewLine);
+                File.AppendAllText(Frequencia.arquivo, frequencia.IdMateria + Environment.NewLine);
+                File.AppendAllText(Frequencia.arquivo, frequencia.IdAluno + Environment.NewLine);
+                File.AppendAllText(Frequencia.arquivo, frequencia.Data + Environment.NewLine);
+                File.AppendAllText(Frequencia.arquivo, frequencia.Presente.ToString() + Environment.NewLine);
+                File.AppendAllText(Frequencia.arquivo, "}");
+
             }
         }
     }

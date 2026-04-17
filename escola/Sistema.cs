@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Text;
 
 namespace escola;
@@ -137,7 +138,9 @@ internal class Sistema
             Console.WriteLine("1 - Lstar minhas matérias.");
             Console.WriteLine("2 - Cadastrar matéria.");
             Console.WriteLine("3 - Consultar alunos de minhas matérias.");
-            Console.WriteLine("4 - Voltar");
+            Console.WriteLine("4 - Cadastrar Frequência.");
+            Console.WriteLine("5 - Consultar Frequências por matéria.");
+            Console.WriteLine("6 - Voltar");
             string escolha = Console.ReadLine();
             switch (escolha)
             {
@@ -210,6 +213,72 @@ internal class Sistema
                     }
 
                     Console.ReadLine();
+                    break;
+                    case "4":
+                    Console.Clear();
+                    Frequencia.Cadastro(professor);
+
+                    
+                    break;
+
+                case "5":
+                    Console.Clear();
+                    Console.WriteLine($"{barras} Frequencias {barras}");
+                    List<Frequencia> frequencias = Frequencia.carregarFrequencias();
+                    if (frequencias is null || frequencias.Count == 0)
+                    {
+                        Console.WriteLine("\nNão foi encontrada nenhuma frequência para este professor...");
+                        Console.WriteLine("Pressione enter para continuar...");
+                        Console.ReadLine();
+                        break;
+                    }
+                    
+                    
+
+                    List<Materia> materiasProfessor = Materia.carregarMateriasPorProfessor(professor);
+                    var materiasFrequencia = materiasProfessor.Join(frequencias, mp => mp.id, f => f.IdMateria, (mp, f) => new
+                    {
+                        mp, f
+                    });
+
+                    materias = Materia.carregarMaterias();
+                    Console.WriteLine("Materias Disponiveis:");
+                    if (materias is null)
+                    {
+                        Console.WriteLine("\nNenhuma matéria disponível para matrícula...");
+                        Console.WriteLine("\nPrecione enter para continuar...");
+                        Console.ReadLine();
+                        return;
+                    }
+                    foreach (Materia materia in materias)
+                    {
+                        Console.WriteLine($"ID: {materia.id} - {materia.nome}");
+                    }
+                    Console.WriteLine("\nDigite o ID da materia que deseja se matricular:");
+                    
+                    if (int.TryParse(Console.ReadLine(), out int idMateria))
+                    {
+                        var alunoMatfrequencia = materiasFrequencia.Where(mf => mf.f.IdMateria == idMateria).
+                            Join(Aluno.carregarTodosAlunos(), mfw => mfw.f.IdAluno, a => a.id, (mfw, a) => new {mfw, a});
+
+                        Console.Clear();
+                        Console.WriteLine($"{barras}{materiasFrequencia.FirstOrDefault().mp.nome} {barras}");
+                        foreach (var mat in alunoMatfrequencia.Where(mf => mf.mfw.f.IdMateria == idMateria))
+                        {
+                           Console.WriteLine($"Aluno: {mat.a.nome} Data: {mat.mfw.f.Data} Presente: {(mat.mfw.f.Presente ? "Sim" : "Não")}");
+                        }
+                        Console.WriteLine("Pressione ENTER para continuar...");
+                        Console.ReadLine();
+                        break;
+
+                    }
+                    
+                    Console.WriteLine("Id inválido, pressione ENTER para continuar...");
+                    Console.ReadLine();
+                    
+                    
+                    
+
                     break;
                 default:
                     Console.Clear();
